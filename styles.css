@@ -1,0 +1,93 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    position: relative;
+    height: 150px;
+    /* Adjusted for a smaller header height */
+}
+
+.pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/pattern.png') repeat-x;
+    background-size: 50%;
+    /* Making the pattern smaller */
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* Moved to the left */
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 300px;
+    /* Adjust size as needed */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    /* This will put space between the images */
+}
+
+.tim-image {
+    width: calc(50% - 10px);
+    /* Adjust width for inline display, minus margin */
+    display: inline-block;
+    /* Changed to inline-block */
+    margin-top: 20px;
+}
+
+.side-image {
+    width: 20%;
+    /* Making images smaller */
+    display: block;
+    margin-top: 10px;
+}
+
+.dotted-list {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table td {
+    padding: 8px;
+    text-align: left;
+    color: blue;
+    /* Sets the text color to blue for table data cells */
+}
+
+.marked {
+    background-color: yellow;
+    /* Marks the text with a yellow background */
+}
+
+/* Additional styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin: 20px;
+}
